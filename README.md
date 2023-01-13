@@ -1,2 +1,4 @@
-# SeqinR
-Seqinr project
+SeqinR
+title: Seqinr project
+
+

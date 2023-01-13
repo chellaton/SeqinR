@@ -1,0 +1,33 @@
+---
+title: "seqinr RMD to read FASTA file"
+author: "Ramesh Chellaton"
+date: "`r Sys.Date()`"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## R Markdown
+
+```{r}
+# install/load seqinr library
+library(seqinr)
+```
+```{r}
+# read a fastra file
+dna = read.fasta(file="GRCh38.fasta", seqtype="DNA", forceDNAtolower=TRUE)
+head(dna)
+```
+
+```{r}
+Number_of_sequences = length(dna)
+print(paste("Number_of_sequences:", Number_of_sequences))
+#Names of sequence(s)
+names = getName(dna)
+names
+#Annotation of sequence
+annotation <- getAnnot(dna)
+annotation
+```
