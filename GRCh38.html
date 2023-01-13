@@ -11,7 +11,7 @@
 
 <meta name="author" content="Ramesh Chellaton" />
 
-<meta name="date" content="2023-01-12" />
+<meta name="date" content="2023-01-13" />
 
 <title>seqinr RMD to read FASTA file</title>
 
@@ -352,7 +352,7 @@ display: none;
 
 <h1 class="title toc-ignore">seqinr RMD to read FASTA file</h1>
 <h4 class="author">Ramesh Chellaton</h4>
-<h4 class="date">2023-01-12</h4>
+<h4 class="date">2023-01-13</h4>
 
 </div>
 
@@ -2921,6 +2921,10 @@ annotation &lt;- getAnnot(dna)
 annotation</code></pre>
 <pre><code>## [[1]]
 ## [1] &quot;&gt;NC_000012.12:c25250929-25205246 Homo sapiens chromosome 12, GRCh38.p14 Primary Assembly&quot;</code></pre>
+<pre class="r"><code>count(dna[[1]],1)</code></pre>
+<pre><code>## 
+##     a     c     g     t 
+## 13456  8014  8626 15588</code></pre>
 </div>
 
 

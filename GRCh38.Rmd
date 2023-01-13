@@ -31,3 +31,7 @@ names
 annotation <- getAnnot(dna)
 annotation
 ```
+
+```{r}
+count(dna[[1]],1)
+```
