@@ -17,4 +17,10 @@ print(paste("Annotations:", annotation))
 # GC Content of the sequence(s)
 print(GC(dna[[1]]) )
 
-count(dna[[1]],2)
+# Count number of dinucleotides and trinucleotides
+number_of_dinucleotides <- count(dna[[1]],2)
+number_of_trinucleotides <- count(dna[[1]],3)
+print("Number of di-nucleotides:")
+print(number_of_dinucleotides)
+print("tri-nucleotides:")
+print( number_of_trinucleotides)
