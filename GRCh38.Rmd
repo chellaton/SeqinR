@@ -18,7 +18,8 @@ library(seqinr)
 ```{r}
 # read a fastra file
 dna = read.fasta(file="GRCh38.fasta", seqtype="DNA", forceDNAtolower=TRUE)
-head(dna)
+#head(dna)
+class(dna)
 ```
 
 ```{r}
@@ -34,4 +35,14 @@ annotation
 
 ```{r}
 count(dna[[1]],1)
+```
+
+```{r}
+print("dinucleotide count")
+count(dna[[1]],2)
+print("trinucleotide count")
+count(dna[[1]],3)
+
+print("GC Content")
+GC(dna[[1]])
 ```

@@ -14,5 +14,7 @@ annotation <- getAnnot(dna)
 print(paste("Names:", names))
 print(paste("Annotations:", annotation))
 
-# Composition of the sequence(s)
-count(dna[[1]],1)
+# GC Content of the sequence(s)
+print(GC(dna[[1]]) )
+
+count(dna[[1]],2)
