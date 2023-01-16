@@ -18,6 +18,9 @@ print(paste("Annotations:", annotation))
 print(GC(dna[[1]]) )
 
 # Count number of dinucleotides and trinucleotides
+# count function in seqinr counts specifically occurrences of 'a','g','c','t' 
+# as dimer ('aa','ac',...), trimer ('aac','aag',...)
+#
 number_of_dinucleotides <- count(dna[[1]],2)
 number_of_trinucleotides <- count(dna[[1]],3)
 print("Number of di-nucleotides:")
