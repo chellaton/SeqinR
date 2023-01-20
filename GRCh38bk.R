@@ -15,6 +15,8 @@ print(paste("Names:", names))
 print(paste("Annotations:", annotation))
 
 # GC Content of the sequence(s)
+# this is sum of "G" and "C" nucleotides as a percentage of the total number
+# of nucleotides
 print(GC(dna[[1]]) )
 
 # Count number of dinucleotides and trinucleotides
